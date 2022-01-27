@@ -1,6 +1,6 @@
 # Golang Service Template
 
-Golang back-end service template, get started with back-end projects quickly.  
+Golang back-end service template. Using this template, you can get started with back-end projects quickly.  
 
 |  Web Framework   |     ORM      |   Database Driver    | Configuration Manager |   Log Manager   |  API Documentation  |
 | :--------------: | :----------: |:--------------------:|:---------------------:| :-------------: |:-------------------:|
@@ -25,7 +25,7 @@ sql:
   db_name: buz
 ```
 
-3. To use API doc, you need to execute the following commands: 
+3. To generate API doc, you need to execute the following commands: 
 
 ```shell
 go install github.com/swaggo/swag/cmd/swag@latest  # download swag, a doc generator
