@@ -6,11 +6,14 @@ import (
 	"net/http"
 )
 
-// @tags Foo
-// @summary A demo API
-// @router /foo [get]
-// @produce json
-func foo(c echo.Context) error {
+// @tags     Foo
+// @summary  A demo API
+// @router   /foo [get]
+// @produce  json
+// @produce  json
+// @param    foo  query     string  true  "Demo request parameter"
+// @success  200  {object}  response.FooResponse
+func Foo(c echo.Context) error {
 	// just a demo
 	var result model.Foo
 	model.DB.Model(&model.Foo{}).First(&result)
