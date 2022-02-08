@@ -2,6 +2,7 @@ package controller
 
 import (
 	"github.com/labstack/echo/v4"
+	"go-svc-tpl/app/response"
 	"go-svc-tpl/model"
 	"net/http"
 )
@@ -18,8 +19,9 @@ func Foo(c echo.Context) error {
 	var result model.Foo
 	model.DB.Model(&model.Foo{}).First(&result)
 
-	return c.JSON(http.StatusOK, &struct {
-		Message string `json:"message"`
-	}{Message: "Hello World! 你好世界！"})
+	return c.JSON(http.StatusOK, response.FooResponse{
+		Foo: c.QueryParam("foo"),
+		Bar: 42,
+	})
 
 }
