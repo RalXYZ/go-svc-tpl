@@ -3,7 +3,7 @@
 Golang back-end service template. Using this template, you can get started with back-end projects quickly.  
 
 |  Web Framework   |     ORM      |   Database Driver    | Configuration Manager |   Log Manager   |  API Documentation  |
-| :--------------: | :----------: |:--------------------:|:---------------------:| :-------------: |:-------------------:|
+|:----------------:|:------------:|:--------------------:|:---------------------:|:---------------:|:-------------------:|
 | labstack/echo/v4 | gorm.io/gorm | gorm.io/driver/mysql |      spf13/viper      | sirupsen/logrus | swaggo/echo-swagger |
 
 ## Configuration
@@ -38,5 +38,5 @@ swag init  # docs will be written into `docs/` directory
 ## Usage
 
 1. To create tables, add structs in `model/`. `model/foo.go` is an example of such struct. Then, add the struct to `DB.AutoMigrate` in `model/init.go`. 
-2. Add business logics in `controller/`, then add router in `controller/routers.go`. 
-3. Write API doc alongside with the controller function. `controller/foo.go` is an example.  
+2. Add business logics in `app/controller/`, then add router in `app/routers.go`. 
+3. Write API doc alongside with the controller function. `app/controller/foo.go` is an example.  
