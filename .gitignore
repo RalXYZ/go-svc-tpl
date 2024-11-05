@@ -1,3 +1,4 @@
 .idea/**
 conf.yaml
 docs/**
+go-svc-tpl

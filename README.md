@@ -28,7 +28,7 @@ sql:
 3. To generate API doc, you need to execute the following commands: 
 
 ```shell
-go install github.com/swaggo/swag/cmd/swag@latest  # download swag, a doc generator
+go install github.com/swaggo/swag/cmd/swag@v1.7.8  # download swag, a doc generator
 swag init  # docs will be written into `docs/` directory
 ```
 
